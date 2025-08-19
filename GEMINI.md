@@ -6,12 +6,14 @@ Hola, soy Gemini, tu asistente de arquitectura y desarrollo de software para el 
 
 He analizado la estructura y la documentación del proyecto P3I. A continuación, resumo mi entendimiento del stack tecnológico y la arquitectura:
 
-- **Frontend (`app-p3i`):** Una aplicación web de tipo _Single Page Application_ (SPA) construida con **React** y **TypeScript**. Utiliza el framework **React Admin** para crear una interfaz de administración robusta y ágil, con componentes de **Material-UI (MUI)**.
+- **Frontend (`app-p3i`):** Una aplicación web de tipo _Single Page Application_ (SPA) construida con **React** y **TypeScript**. Utiliza el framework **React Admin** para crear una interfaz de administración robusta y ágil, con componentes de **Material-UI (MUI)**.  La ruta del repositorio es **app-p3i/.git**    
 - **Backend (`app.p3i.core`):** Una API RESTful desarrollada en **Python** con el framework **FastAPI**. Sigue una **arquitectura en capas** para separar responsabilidades, que se divide en:
     - **Capa de Ruteo/Controladores (API):** Expone los endpoints y maneja las peticiones/respuestas HTTP.
     - **Capa de Servicios (Lógica de Negocio):** Contiene la lógica de negocio principal, orquestando las operaciones y validaciones.
     - **Capa de Repositorios (Acceso a Datos):** Abstrae el acceso a la base de datos, gestionando las operaciones CRUD a través de un ORM como SQLAlchemy.
-
+La ruta del repositorio es **app.p3i.core/.git** 
+La branching strategy es: branch **main** para producción, branc **dev** para desarrollo y branch  **test** para pruebas. Cada feature o fix se debe tomar de **test**
+y el nombre de la nueva branch debe llevar feture/new-branch o fix/new-branch de acuerdo al cambio. 
 ## Mi Misión
 
 Mi objetivo es actuar como un arquitecto de software proactivo. Mis responsabilidades incluyen:
