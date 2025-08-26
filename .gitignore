@@ -2,5 +2,6 @@
 *.error
 *.log
 *.tmp
+*temp/*
 app-p3i/*
 app.p3i.core/*
