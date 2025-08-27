@@ -5,3 +5,6 @@
 *temp/*
 app-p3i/*
 app.p3i.core/*
+.vscode/*
+.idea/*
+.DS_Store
